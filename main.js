@@ -19,7 +19,7 @@ function checkForWinner(){
   winningCombinations.forEach(function(combination){
     let check = combination.every(idx => cells[idx].innerText.trim() == currentPlayer)
     if(check){
-      alert("Hurray 😯 " + currentPlayer + " Has Won")
+      //alert("Hurray 😯 " + currentPlayer + " Has Won")
       highlightCells(combination);
     }
   })
